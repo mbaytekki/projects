@@ -1,0 +1,228 @@
+body{
+    background-color: #cccccc;
+    background-image: url(images/saint-louis.jpeg);
+}
+#principal{
+    padding: 0px;
+    /* background-color: grey; */
+    width: 1000px;
+    
+    display: block;
+    margin: auto;
+}
+#galerie{
+    padding: 250px;
+    padding-top: 50px;
+    margin: auto;
+    padding: auto;
+}
+/* le block conteneur */
+.marquee-rtl {
+    max-width: 100em; 
+    height: 5em;                     /* largeur de la fenêtre */
+    margin: 1em auto 3em;
+    /*border: 10px solid #F0F0FF;*/
+    overflow: hidden;                     /* masque tout ce qui dépasse */
+    
+}
+/* le bloc défilant */
+.marquee-rtl > :first-child {
+    display: inline-block;                /* modèle de boîte en ligne */
+    padding-right: 2em;                   /* un peu d'espace pour la transition */
+    padding-left: 100%;                   /* placement à droite du conteneur */
+    white-space: nowrap;                  /* pas de passage à la ligne */
+    animation: defilement-rtl 15s infinite linear;
+}
+img{
+    overflow: hidden;
+    border: 2em solid #d9d8cc;
+}
+@keyframes defilement-rtl {
+    0% {
+      transform: translate3d(0,0,0);      /* position initiale à droite */
+    }
+    100% {
+      transform: translate3d(-100%,0,0);  /* position finale à gauche */
+    }
+  }
+
+
+
+#menu{
+    
+    width: 1000px;
+    height: 40px;
+}
+
+#contenu{
+    background-color: #e0dfd9;
+    width: 880px;
+    height: 550px;
+    padding: 60px;
+}
+
+#piedpage{
+    background-color:  #3B413F;
+    width: 1000px;
+    height: 50px;
+}
+
+ul{
+    /*display: block;*/
+    margin-top: 0px;
+    width: 1500px;
+    padding-left: -5px;
+}
+
+li{
+    display: inline-block;
+    color: white;
+    padding: 20px;
+}
+
+
+li:hover{
+    color: black;
+    background-color: rgb(222, 221, 217);
+    height: 8px;
+   
+}
+
+form{
+    background-color: floralwhite;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    border: 1px solid brown;
+    border-radius: 20px 20px;
+}
+
+label {
+    margin-top:10px;
+    margin-left: 10px;
+    font-weight: bold;
+    display: inline-block;
+    width: 100px;
+ }
+
+input{
+   
+    background-color:#FFF3F3;
+    padding:3px;
+    border:1px solid #F5C5C5;
+    border-radius:5px;
+    height: 20px;
+    width:200px;
+    margin: 10px;
+}
+
+#bouton{
+    background-color: brown;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 4px;
+    height: 30px;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 150px;
+    border-radius: 30px 30px;
+}
+
+h2{
+    text-align: center;
+    background-color: brown;
+    color: white;
+    margin-top: 0px;
+    border-top-left-radius: 20px 20px;
+    border-top-right-radius: 20px 20px;
+    padding: 4px;
+}
+input:invalid{
+    border:2px solid red;
+}
+.field>input:valid{
+    background-color: white;
+}
+
+input[type="submit"]{
+    background-color: brown;
+    color: white;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+    height: 30px;
+    
+}
+input[type="checkbox"]{
+    background-color: brown;
+    color: white;
+    height: auto;
+    margin-right: -90px;
+    
+}
+
+span{
+    margin-left: 0px;
+    display: inline-block;
+}
+
+form {
+    /* Uniquement centrer le formulaire sur la page */
+    margin: 0 auto;
+    width: 400px;
+    /* Encadré pour voir les limites du formulaire */
+    padding: 5em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+  }
+  
+  form div + div {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* Pour être sûrs que toutes les étiquettes ont même taille et sont correctement alignées */
+    display: inline-block;
+    width: 90px;
+    text-align: left;
+  }
+  
+  input, textarea {
+    /* Pour s'assurer que tous les champs texte ont la même police.
+       Par défaut, les textarea ont une police monospace */
+    font: 1em sans-serif;
+  
+    /* Pour que tous les champs texte aient la même dimension */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Pour harmoniser le look & feel des bordures des champs texte */
+    border: 1px solid #999;
+  }
+  
+  input:focus, textarea:focus {
+    /* Pour souligner légèrement les éléments actifs */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* Pour aligner les champs texte multi‑ligne avec leur étiquette */
+    vertical-align: top;
+  
+    /* Pour donner assez de place pour écrire du texte */
+    height: 5em;
+  }
+  
+  .button {
+    /* Pour placer le bouton à la même position que les champs texte */
+    padding-left: 90px; /* même taille que les étiquettes */
+  }
+  
+  button {
+    /* Cette marge supplémentaire représente grosso modo le même espace que celui
+       entre les étiquettes et les champs texte */
+    margin-left: .5em;
+  }
+  
